@@ -1,0 +1,152 @@
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #fdfaf4; /* 仿古米黄 */
+    color: #5a463a; /* 深棕色文字 */
+}
+
+.container {
+    max-width: 48rem; /* 限制最大宽度，类似 2xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.title-serif {
+    font-family: 'Noto Serif SC', serif;
+    color: #8c3b30; /* 类朱红色标题 */
+}
+
+.attraction-card {
+    background-color: #fefcf8; /* 略深的米白 */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden;
+    margin-bottom: 1.5rem; /* 添加卡片间距 */
+}
+
+.attraction-header {
+    cursor: pointer;
+    border-bottom: 1px solid #eee5d9; /* 分隔线 */
+    padding: 1rem 1.5rem; /* 调整内边距 */
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attraction-header:hover {
+    background-color: #fbf6ef;
+}
+
+.attraction-header h2 {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    margin: 0; /* 移除默认margin */
+}
+
+.attraction-content {
+    padding: 1rem 1.5rem; /* 调整内边距 */
+    border-top: 1px solid #eee5d9; /* 内容区顶部加分隔线 */
+    background-color: #fffdfa; /* 内容区背景色 */
+    font-size: 0.875rem; /* text-sm */
+    line-height: 1.6; /* leading-relaxed */
+    color: #4a4a4a; /* 调整文字颜色 */
+}
+
+.attraction-content h3 {
+    font-family: 'Noto Serif SC', serif;
+    color: #8c3b30;
+    font-weight: 600;
+    font-size: 1rem; /* text-base */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.attraction-content ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding-left: 0.5rem; /* 调整列表缩进 */
+}
+
+.attraction-content p {
+    margin-bottom: 0.75rem;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem; /* 与文字内容间距 */
+}
+
+.audio-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #8c3b30;
+    font-size: 1.25rem; /* text-xl */
+    margin-right: 0.5rem; /* 与文字间距 */
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.audio-button:hover {
+    color: #b85a4d;
+}
+
+.audio-label {
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280; /* text-gray-500 */
+}
+
+.toggle-icon {
+    color: #c0a98e; /* 指示箭头颜色 */
+    transition: transform 0.3s ease;
+}
+
+/* 用于旋转展开/收起图标 */
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* 隐藏内容的样式 */
+.hidden-content {
+    display: none;
+}
+
+/* 页头样式 */
+.page-header {
+    text-align: center;
+    margin-top: 2rem; /* my-8 */
+    margin-bottom: 2rem; /* my-8 */
+}
+
+.page-header h1 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+}
+
+.page-header p {
+    color: #6b7280; /* text-gray-500 */
+    margin-top: 0.25rem; /* mt-1 */
+}
+
+/* 周边景点列表 */
+.surrounding-attractions {
+    background-color: #fefcf8;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.surrounding-attractions .attraction-header {
+    border-bottom: 1px solid #eee5d9;
+}
+
+.surrounding-attractions .attraction-header:last-child {
+    border-bottom: none;
+}
+
+.surrounding-attractions .play-icon {
+    color: #c0a98e; /* 播放按钮颜色 */
+    cursor: pointer; /* 添加手型光标 */
+}
